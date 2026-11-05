@@ -1,0 +1,19 @@
+{
+  "name": "cinephile",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Cinephile – MERN movie discovery and ticket booking platform",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix backend && npm install --prefix frontend && npm install --prefix admin",
+    "seed": "npm run seed --prefix backend",
+    "dev": "concurrently -k -n api,web,admin -c red,cyan,magenta \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\" \"npm run dev --prefix admin\"",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:admin": "npm run dev --prefix admin",
+    "test:api": "npm run test:api --prefix backend",
+    "build": "npm run build --prefix frontend && npm run build --prefix admin"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

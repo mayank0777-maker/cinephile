@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 64" width="88" height="64">
+  <defs>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="0.45" stop-color="#cbd5e1"/>
+      <stop offset="1" stop-color="#64748b"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4b5563"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="lens" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#374151"/>
+      <stop offset="1" stop-color="#9ca3af"/>
+    </linearGradient>
+    <clipPath id="reelInner"><circle cx="28" cy="35" r="19"/></clipPath>
+  </defs>
+
+  <!-- movie camera (behind) -->
+  <g stroke="#0b0f19" stroke-width="2">
+    <circle cx="52" cy="13" r="9" fill="url(#body)"/>
+    <circle cx="70" cy="14" r="7.5" fill="url(#body)"/>
+    <rect x="42" y="21" width="34" height="24" rx="5" fill="url(#body)"/>
+    <path d="M76 28 L87 22 L87 44 L76 38Z" fill="url(#lens)"/>
+  </g>
+  <circle cx="52" cy="13" r="3" fill="#9ca3af"/>
+  <circle cx="70" cy="14" r="2.5" fill="#9ca3af"/>
+  <rect x="46" y="24" width="16" height="3" rx="1.5" fill="#6b7280" opacity="0.7"/>
+
+  <!-- film reel (front) -->
+  <circle cx="28" cy="35" r="26" fill="#0b0f19"/>
+  <circle cx="28" cy="35" r="23.5" fill="url(#metal)"/>
+  <circle cx="28" cy="35" r="19" fill="#0f172a"/>
+  <!-- colour bars in the lower half of the reel -->
+  <g clip-path="url(#reelInner)">
+    <rect x="9" y="37" width="9.5" height="20" fill="#ef4444"/>
+    <rect x="18.5" y="37" width="9.5" height="20" fill="#facc15"/>
+    <rect x="28" y="37" width="9.5" height="20" fill="#22c55e"/>
+    <rect x="37.5" y="37" width="9.5" height="20" fill="#3b82f6"/>
+    <path d="M9 37 Q28 47 47 37" fill="none" stroke="#0f172a" stroke-width="3"/>
+  </g>
+  <!-- reel holes (upper half) -->
+  <g fill="url(#metal)">
+    <circle cx="28" cy="22" r="5"/>
+    <circle cx="16.5" cy="29" r="4.5"/>
+    <circle cx="39.5" cy="29" r="4.5"/>
+  </g>
+  <circle cx="28" cy="33" r="3" fill="url(#metal)" stroke="#0f172a" stroke-width="1.5"/>
+  <!-- shine -->
+  <path d="M10 22 A21 21 0 0 1 24 12" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="600" height="900">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b0820"/>
+      <stop offset="0.45" stop-color="#3b1033"/>
+      <stop offset="0.72" stop-color="#b4371f"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff7d6"/>
+      <stop offset="0.35" stop-color="#fcd34d"/>
+      <stop offset="0.75" stop-color="#f97316" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff1c1"/>
+      <stop offset="0.5" stop-color="#f5c45e"/>
+      <stop offset="1" stop-color="#b7791f"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05040c" stop-opacity="0"/>
+      <stop offset="1" stop-color="#05040c" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="900" fill="url(#sky)"/>
+  <!-- stars -->
+  <g fill="#fff" opacity="0.7">
+    <circle cx="60" cy="70" r="1.4"/><circle cx="140" cy="130" r="1"/><circle cx="230" cy="50" r="1.2"/>
+    <circle cx="380" cy="90" r="1.5"/><circle cx="470" cy="40" r="1"/><circle cx="540" cy="150" r="1.3"/>
+    <circle cx="90" cy="210" r="1"/><circle cx="510" cy="250" r="1"/><circle cx="320" cy="170" r="0.9"/>
+  </g>
+
+  <!-- rising sun -->
+  <circle cx="300" cy="560" r="230" fill="url(#sun)"/>
+  <circle cx="300" cy="560" r="105" fill="#fde68a" opacity="0.9"/>
+
+  <!-- Lanka towers silhouette -->
+  <g fill="#1a0b16" opacity="0.85">
+    <path d="M0 700 L0 610 L30 610 L30 580 L45 560 L60 580 L60 600 L90 600 L90 560 L105 520 L120 560 L120 620 L150 620 L150 590 L170 570 L190 590 L190 640 L0 700Z"/>
+    <path d="M600 700 L600 600 L575 600 L575 570 L560 545 L545 570 L545 595 L515 595 L515 545 L498 500 L481 545 L481 615 L452 615 L452 585 L432 565 L412 585 L412 640 L600 700Z"/>
+  </g>
+  <!-- foreground hills -->
+  <path d="M0 720 Q150 650 300 690 T600 680 L600 900 L0 900Z" fill="#12070f"/>
+
+  <!-- bow and flaming arrow -->
+  <g filter="url(#glow)">
+    <path d="M196 300 Q300 470 196 640" fill="none" stroke="url(#gold)" stroke-width="9" stroke-linecap="round"/>
+    <line x1="196" y1="300" x2="196" y2="640" stroke="#fde68a" stroke-width="1.6" opacity="0.8"/>
+    <line x1="170" y1="470" x2="470" y2="470" stroke="url(#gold)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M470 470 L448 458 L452 470 L448 482Z" fill="#fde68a"/>
+    <path d="M476 470 C500 450 520 462 540 446 C530 470 548 476 556 470 C548 488 520 482 500 494 C510 482 492 478 476 470Z" fill="#fb923c" opacity="0.9"/>
+    <path d="M170 470 l-14 -10 m14 10 l-14 10 m24 -10 l-14 -10 m14 10 l-14 10" stroke="#fde68a" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <rect x="0" y="600" width="600" height="300" fill="url(#fade)"/>
+
+  <!-- title block -->
+  <text x="300" y="138" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" letter-spacing="8" fill="#fde68a" opacity="0.9">AN EPIC FOR ALL AGES</text>
+  <text x="300" y="770" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="84" font-weight="700" letter-spacing="6" fill="url(#gold)" filter="url(#glow)">RAMAYANA</text>
+  <text x="300" y="808" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" letter-spacing="14" fill="#fef3c7">PART ONE</text>
+  <line x1="200" y1="830" x2="400" y2="830" stroke="#f5c45e" stroke-width="1" opacity="0.6"/>
+  <text x="300" y="860" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="5" fill="#fde68a">IN CINEMAS · 5 NOVEMBER</text>
+</svg>
