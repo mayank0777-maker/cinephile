@@ -8,6 +8,16 @@ Cinephile is a full-stack movie discovery and online ticket booking platform, si
 | **frontend/** (customer site) | React 19, Vite, React Router 7, Tailwind CSS 4, Axios, Lucide icons | http://localhost:5173 |
 | **admin/** (admin panel) | React 19, Vite, React Router 7, Tailwind CSS 4, Axios, Lucide icons | http://localhost:5174 |
 
+## 🌐 Live demo
+
+| App | Link | Demo login |
+|---|---|---|
+| 🎬 Customer website | https://cinephile-1-i5k6.onrender.com | `user@cinephile.com` / `User@123` |
+| 🛠️ Admin panel | https://cinephile-admin-panel.onrender.com | `admin@cinephile.com` / `Admin@123` |
+| ⚙️ Backend API | https://cinephile-p9sl.onrender.com ([health](https://cinephile-p9sl.onrender.com/api/health)) | – |
+
+Hosted on Render (free plan) with MongoDB Atlas. The backend sleeps after 15 minutes without visitors, so the first load can take 30–60 seconds.
+
 ---
 
 ## ✨ Features
